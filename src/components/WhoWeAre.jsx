@@ -4,7 +4,8 @@ import questionMark from "./../assets/untitled-artwork-1@2x.png";
 const WhoWeAre = () => {
   return (
     <>
-      <section className="container relative ">
+      <section className="bg-snow">
+        <div className="container relative ">
 
         <div className="py-32">
 
@@ -42,6 +43,7 @@ const WhoWeAre = () => {
 
         <div className="absolute right-36 top-32">
           <img className="w-20 " src={questionMark} alt="Question Mark" />
+        </div>
         </div>
 
       </section>

@@ -4,7 +4,7 @@ import rightHand from "./../assets/untitled-artwork-12-1@2x.png";
 const WeSolving2 = () => {
   return (
     <>
-      <section className="container flex items-center justify-center gap-10 py-44">
+      <section className="container flex items-center justify-center gap-10 pb-44">
         <div className="flex items-center justify-center gap-10">
           <img className="w-14 " src={leftHand} alt="left hand ok" />
           <h3 className="text-4xl w-[800px] text-coral text-center">

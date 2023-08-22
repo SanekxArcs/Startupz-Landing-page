@@ -1,9 +1,9 @@
-import logo from "./../assets/group-16.svg";
+import rocket from "./../assets/subtract.svg";
 const Contacts = () => {
   return (
     <>
       <section className="relative text-white bg-secondary-yellow">
-        <div className="px-[7.8rem] container pb-12">
+        <div className="px-[7.8rem] container pb-16">
           <h4 className="w-2/3 text-6xl font-bold pt-14">
             Are you ready <br /> to board this rocket ship?
           </h4>
@@ -30,7 +30,7 @@ const Contacts = () => {
               </div>
               <div className="form-group-input">
                 <textarea
-                  className="w-full px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-whitesmoke"
+                  className="w-full px-5 py-3 text-lg font-roboto border-0 shadow-lg rounded-xl text-whitesmoke"
                   name="message"
                   id="message"
                   cols="50"
@@ -41,7 +41,7 @@ const Contacts = () => {
               <div className="flex justify-center">
                 <button
                   type="submit"
-                  className="px-6 py-2 mt-2 mb-10 text-lg font-bold text-white no-underline rounded-full bg-darkslategray"
+                  className="px-8 py-2 border-0 mt-2 mb-10 text-lg font-bold text-white no-underline rounded-full bg-darkslategray hover:-translate-y-0.5 transition-all hover:shadow-md"
                 >
                   Shoot us a message
                 </button>
@@ -50,8 +50,8 @@ const Contacts = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-0 -right-[3000px]">
-          <img className="h-[1000px]" src={logo} alt="logo" />
+        <div className="absolute bottom-0 right-52">
+          <img className="" src={rocket} alt="logo" />
         </div>
       </section>
     </>
