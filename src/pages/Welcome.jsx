@@ -1,11 +1,28 @@
+import Hero from "../components/Hero";
+import OurCoreValues from "../components/OurCoreValues";
+import WeSolving from "../components/WeSolving";
+import WeSolving2 from "../components/WeSolving2";
+import WhoWeAre from "../components/WhoWeAre";
+import OurWorks from "../components/OurWorks";
+import Hiring from "../components/Hiring";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 
 const Welcome = () => {
 
   return (
     <>
-    <div className=" h-screen bg-slate-200 grid place-content-center">
-        <h1>hello</h1>
-    </div>
+      <main>
+        <Hero/>
+        <WhoWeAre/>
+        <WeSolving/>
+        <OurCoreValues/>
+        <OurWorks/>
+        <WeSolving2/>
+        <Hiring/>
+        <Contacts/>
+        <Footer/>
+      </main>
     </>
   );
 };
