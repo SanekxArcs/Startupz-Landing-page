@@ -3,10 +3,10 @@ import lamp from "./../assets/untitled-artwork-2@2x.png";
 const OurCoreValues = () => {
   return (
     <>
-      <section className="bg-snow">
-        <div className="container relative py-32 px-[7.5rem]">
-          <h2 className="text-5xl">Our core values</h2>
-          <div className="grid grid-cols-2 gap-12 pt-32 text-3xl font-bold">
+      <section className="overflow-hidden bg-snow">
+        <div className="container relative py-32 xl:px-[8rem] px-4 ">
+          <h2 className="text-4xl md:text-5xl">Our core values</h2>
+          <div className="grid gap-12 pt-32 text-3xl font-bold md:grid-cols-2">
             <div className="">
               <p className="text-coral">01. Innovation</p>
               <p className="pt-12">
@@ -22,7 +22,7 @@ const OurCoreValues = () => {
               </p>
             </div>
           </div>
-          <div className="absolute right-36 top-28">
+          <div className="absolute right-8 top-8 lg:right-36 md:right-16 lg:top-28 md:top-16">
             <img className="w-24" src={lamp} alt="lamp Mark" />
           </div>
         </div>

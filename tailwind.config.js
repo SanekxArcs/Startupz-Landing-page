@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: "320px",
+      sm: "375px",
       md: "768px",
       lg: "1024px",
       xl: "1440px",
@@ -13,7 +13,7 @@ export default {
         width: true,
         center: true,
         screens: {
-          sm: "320px",
+          sm: "375px",
           md: "768px",
           lg: "1024px",
           xl: "1440px",

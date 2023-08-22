@@ -37,19 +37,19 @@ const workData = [
 
 const OurWorks = () => {
   return (
-    <section className="container py-44 px-[7.5rem]">
-      <h4 className="text-5xl text-center">Our works</h4>
-      <div className="grid grid-cols-2 gap-6 pt-16">
+    <section className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden">
+      <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
+      <div className="grid gap-6 pt-16 lg:grid-cols-2">
         {workData.map((work, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center gap-3 p-10 shadow-lg rounded-4xl"
           >
             <h5 className={`${work.color} text-3xl`}>{work.title}</h5>
-            <p className="w-3/4 text-center te">
+            <p className="text-center md:w-3/4 ">
               <i>{work.description}</i>
             </p>
-            <img className="w-96" src={work.image} alt="" />
+            <img className="w-full md:w-96" src={work.image} alt="" />
             <a
               className="px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
               href=""

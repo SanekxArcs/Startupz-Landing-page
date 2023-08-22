@@ -5,21 +5,21 @@ import heroArt from "./../assets/untitled-artwork-7-1@2x.png";
 const Hero = () => {
   return (
     <>
-      <section className=" relative h-[82dvh]">
+      <section className="relative h-[82dvh] overflow-hidden">
         <div className="container">
-          <header className="flex justify-between px-[8rem] pt-8">
+          <header className="flex justify-between xl:px-[8rem] px-4 pt-4 md:pt-8">
             <div>
               <img src={logo} alt="logo" />
             </div>
-            <nav className="flex items-center mb-3 font-normal gap-12 text-darkslategray">
+            <nav className="items-center hidden gap-12 mb-3 font-normal md:flex text-darkslategray">
               <a
-                className="no-underline text-darkslategray hover:text-coral hover:font-medium transition-all"
+                className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
                 href="http://"
               >
                 Startups
               </a>
               <a
-                className="no-underline text-darkslategray hover:text-coral hover:font-medium transition-all"
+                className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
                 href="http://"
               >
                 Contact
@@ -33,21 +33,21 @@ const Hero = () => {
             </nav>
           </header>
 
-          <div className="flex flex-col items-start px-[7.5rem] pt-32">
-            <h1 className="m-0 font-bold text-darkslategray text-[85px] leading-[85px] font-custom tracking-tight">
-              We Create <br /> Startups.
+          <div className="flex flex-col items-start xl:px-[8rem] px-4 pt-16 md:pt-32">
+            <h1 className="m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">
+              We Create <br className="hidden md:block"/> Startups.
             </h1>
-            <p className="m-0 mt-8 text-2xl text-coral">
+            <p className="w-2/3 m-0 text-xl md:w-1/2 md:mt-8 md:text-2xl xl:w-full text-coral">
               We are startup studio that develops and launches new companies.
             </p>
-            <a className="px-6 py-4 mt-6 font-bold text-white no-underline rounded-full bg-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md">
+            <a className="px-6 py-4 mt-14 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green tracking-wider hover:-translate-y-0.5 transition-all hover:shadow-md">
               See our works
             </a>
           </div>
         </div>
 
-        <div className="absolute bottom-0 right-0 -z-10">
-          <img className="w-[50rem]" src={heroArt} alt="" />
+        <div className="absolute bottom-0 -right-64 -z-10">
+          <img className=" opacity-50 w-2/3 md:w-144 lg:w-[40rem] xl:w-[50rem]" src={heroArt} alt="" />
         </div>
       </section>
     </>
