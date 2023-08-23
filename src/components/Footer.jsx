@@ -3,7 +3,8 @@ import twitter from "./../assets/Vector.svg";
 import Linkedin from "./../assets/Linkedin.svg";
 import instagram from "./../assets/instagram.svg";
 
-const Footer = () => {
+// eslint-disable-next-line react/prop-types
+const Footer = ({clickHandlerAlert}) => {
   return (
     <>
       <footer
@@ -21,25 +22,25 @@ const Footer = () => {
           <div className="flex flex-col gap-4 pt-6 font-medium no-underline text-complementary-green">
             <a
               className="transition-all hover:text-coral hover:font-medium"
-              href=""
+              href="https://tolq.com/"
             >
               Tolq
             </a>
             <a
               className="transition-all hover:text-coral hover:font-medium"
-              href=""
+              href="https://legalsite.co/"
             >
               LegalSite
             </a>
             <a
               className="transition-all hover:text-coral hover:font-medium"
-              href=""
+              href="https://codekeeper.co/index.html"
             >
               Codekeeper
             </a>
             <a
               className="transition-all hover:text-coral hover:font-medium"
-              href=""
+              href="https://feedbacklabs.org/"
             >
               Feedback Labs
             </a>
@@ -56,7 +57,7 @@ const Footer = () => {
             </p>
             <a
               className="pt-5 font-medium transition-all text-complementary-green hover:text-coral hover:font-medium"
-              href=""
+              href="#Work"
             >
               Send us an email
             </a>
@@ -65,15 +66,24 @@ const Footer = () => {
         <div className="pt-3 xl:pl-48">
           <h5 className="text-lg font-medium">Follow us</h5>
           <div className="flex flex-col gap-4 pt-3">
-            <a className="transition-all hover:invert" href="http://">
+            <button
+              onClick={clickHandlerAlert}
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+            >
               <img src={twitter} alt="tweeter" />
-            </a>
-            <a className="transition-all hover:invert" href="http://">
+            </button>
+            <button
+              onClick={clickHandlerAlert}
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+            >
               <img src={Linkedin} alt="linkedin" />
-            </a>
-            <a className="transition-all hover:invert" href="http://">
+            </button>
+            <button
+              onClick={clickHandlerAlert}
+              className="p-0 m-0 transition-all bg-transparent border-0 hover:invert"
+            >
               <img src={instagram} alt="Instagram" />
-            </a>
+            </button>
           </div>
         </div>
       </footer>

@@ -1,4 +1,5 @@
 import rocket from "./../assets/subtract.svg";
+
 // eslint-disable-next-line react/prop-types
 const Contacts = ({ clickHandlerThanks }) => {
   return (
@@ -17,20 +18,31 @@ const Contacts = ({ clickHandlerThanks }) => {
           </p>
           <div className="z-20 p-5 mt-5 md:pt-20 bg-whitesmoke md:w-128 rounded-2xl">
             <form className="flex flex-col justify-center gap-4 md:px-10">
+              <label className="hidden" htmlFor="name">
+                Name*
+              </label>
               <input
                 className="w-full px-5 py-3.5 font-medium border-0 shadow-lg text-lg rounded-xl text-whitesmoke"
                 type="name"
                 name="name"
                 id="name"
                 placeholder="Name*"
+                required
               />
+              <label className="hidden" htmlFor="email">
+                Email*
+              </label>
               <input
                 className="w-full px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-whitesmoke"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email*"
+                required
               />
+              <label className="hidden" htmlFor="message">
+                Message*
+              </label>
               <textarea
                 className="w-full px-5 py-3 text-lg border-0 shadow-lg font-roboto rounded-xl text-whitesmoke"
                 name="message"
@@ -38,6 +50,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 cols="50"
                 rows="9"
                 placeholder="Message*"
+                required
               ></textarea>
               <div className="flex justify-center">
                 <button
@@ -51,7 +64,7 @@ const Contacts = ({ clickHandlerThanks }) => {
             </form>
           </div>
           <div className="absolute z-0 hidden -bottom-1 lg:block lg:-right-52 xl:right-32">
-            <img className="" src={rocket} alt="logo" />
+            <img className="" src={rocket} alt="Rocket ship launching" />
           </div>
         </div>
       </section>

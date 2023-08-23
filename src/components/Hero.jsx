@@ -5,12 +5,19 @@ import heroArt from "./../assets/untitled-artwork-7-1@2x.png";
 const Hero = () => {
   return (
     <>
+      {/* Hero Section */}
       <section className="relative h-[82dvh] overflow-hidden">
         <div className="container">
+          
+          {/* Header */}
           <header className="flex justify-between xl:px-[8rem] px-4 pt-4 md:pt-8">
+
+            {/* Company Logo */}
             <div>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="Company Logo" />
             </div>
+
+            {/* Navigation */}
             <nav className="items-center hidden gap-12 mb-3 font-normal md:flex text-darkslategray">
               <a
                 className="no-underline transition-all text-darkslategray hover:text-coral hover:font-medium"
@@ -33,6 +40,8 @@ const Hero = () => {
             </nav>
           </header>
 
+          {/* Content */}
+
           <div className="flex flex-col items-start xl:px-[8rem] px-4 pt-16 md:pt-32">
             <h1 className="m-0 font-bold text-darkslategray text-4xl md:text-[85px] leading-[85px] font-custom tracking-tight">
               We Create <br className="hidden md:block" /> Startups.
@@ -49,11 +58,13 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* Background Art */}
+
         <div className="absolute bottom-0 -right-64 -z-10">
           <img
             className=" opacity-50 md:opacity-100 w-2/3 md:w-144 lg:w-[40rem] xl:w-[50rem]"
             src={heroArt}
-            alt=""
+            alt="Illustration of Startups"
           />
         </div>
       </section>

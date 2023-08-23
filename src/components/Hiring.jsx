@@ -1,6 +1,9 @@
+import PropTypes from 'prop-types';
+
  import leftman from "./../assets/leftman.png";
  import rightman from "./../assets/rightman.png";
-// eslint-disable-next-line react/prop-types
+
+ 
 const Hiring = ({ clickHandlerAlert }) => {
   return (
     <>
@@ -8,7 +11,7 @@ const Hiring = ({ clickHandlerAlert }) => {
         <img
           className="hidden h-10 md:block md:h-44 lg:h-64 xl:h-80"
           src={leftman}
-          alt="left man"
+          alt="Man on the left side of the section"
         />
         <div className="container flex justify-center">
           <div className="flex flex-col justify-center items-center w-[440px] gap-8 md:py-24 lg:py-36">
@@ -20,7 +23,6 @@ const Hiring = ({ clickHandlerAlert }) => {
             <button
               onClick={clickHandlerAlert}
               className="border-0 px-6 py-4 mt-3 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
-              href="#"
             >
               See current openings
             </button>
@@ -30,11 +32,14 @@ const Hiring = ({ clickHandlerAlert }) => {
         <img
           className="hidden md:block md:h-44 lg:h-64 xl:h-80"
           src={rightman}
-          alt="right man"
+          alt="Man on the right side of the section"
         />
       </section>
     </>
   );
+};
+Hiring.propTypes = {
+  clickHandlerAlert: PropTypes.func.isRequired,
 };
 
 export default Hiring

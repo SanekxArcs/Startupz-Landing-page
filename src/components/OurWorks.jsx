@@ -1,4 +1,6 @@
 
+
+import PropTypes from "prop-types";
 import img1 from "./../assets/img1.png";
 import img2 from "./../assets/img2.png";
 import img3 from "./../assets/img3.png";
@@ -35,36 +37,55 @@ const workData = [
   },
 ];
 
-// eslint-disable-next-line react/prop-types
+
+const WorkItem = ({ work, clickHandlerAlert }) => {
+  return (
+    <div className="flex flex-col items-center justify-center gap-3 p-10 shadow-lg rounded-4xl">
+      <h5 className={`${work.color} text-3xl`}>{work.title}</h5>
+      <p className="text-center md:w-3/4">
+        <i>{work.description}</i>
+      </p>
+      <img
+        className="w-full md:w-96"
+        src={work.image}
+        alt={`Image for ${work.title}`}
+      />
+      <button
+        onClick={clickHandlerAlert}
+        className="border-0 bg-white px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
+      >
+        More
+      </button>
+    </div>
+  );
+};
+WorkItem.propTypes = {
+  clickHandlerAlert: PropTypes.func.isRequired,
+  work: PropTypes.string.isRequired,
+};
+
 const OurWorks = ({ clickHandlerAlert }) => {
   return (
-    <section
+    <main
       className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden"
       id="Startups"
     >
       <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
       <div className="grid gap-6 pt-16 lg:grid-cols-2">
         {workData.map((work, index) => (
-          <div
+          <WorkItem
             key={index}
-            className="flex flex-col items-center justify-center gap-3 p-10 shadow-lg rounded-4xl"
-          >
-            <h5 className={`${work.color} text-3xl`}>{work.title}</h5>
-            <p className="text-center md:w-3/4 ">
-              <i>{work.description}</i>
-            </p>
-            <img className="w-full md:w-96" src={work.image} alt="" />
-            <button
-              onClick={clickHandlerAlert}
-              className=" border-0 bg-white px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
-            >
-              More
-            </button>
-          </div>
+            work={work}
+            clickHandlerAlert={clickHandlerAlert}
+          />
         ))}
       </div>
-    </section>
+    </main>
   );
+};
+
+OurWorks.propTypes = {
+  clickHandlerAlert: PropTypes.func.isRequired,
 };
 
 export default OurWorks;

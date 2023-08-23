@@ -9,7 +9,7 @@ import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
 import Assistant from "../components/Assistant";
 import Alert from "../components/Alert";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Thanks from "../components/Thanks";
 
 const Welcome = () => {
@@ -43,10 +43,17 @@ const Welcome = () => {
         <WeSolving2 />
         <Hiring clickHandlerAlert={clickHandlerAlert} />
         <Contacts clickHandlerThanks={clickHandlerThanks} />
-        <Footer />
+        <Footer clickHandlerAlert={clickHandlerAlert} />
         <Assistant />
-        {showAlert && <Alert />}
-        {showThanks && <Thanks />}
+        {showAlert && (
+          <Alert
+            title="Sorry, this page is unavailable"
+            message="Please contact the creator of this test site"
+          />
+        )}
+        {showThanks && (
+          <Thanks message="Thank you, we will contact with you soon" />
+        )}
       </main>
     </>
   );
