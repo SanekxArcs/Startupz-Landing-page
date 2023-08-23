@@ -8,15 +8,21 @@ const OurCoreValues = () => {
           <h2 className="text-4xl md:text-5xl">Our core values</h2>
           <div className="grid gap-12 pt-32 text-3xl font-bold md:grid-cols-2">
             <div className="">
-              <p className="text-coral">01. Innovation</p>
+              <p className="text-coral relative">
+                01. Innovation
+                <div className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></div>
+              </p>
               <p className="pt-12">
                 Startupz operates where entrepreneurship and technology
                 intersect. We design solutions and turn them into businesses
                 models.
               </p>
             </div>
-            <div className="">
-              <p className="text-coral">02. People</p>
+            <div>
+              <p className="text-coral relative">
+                02. People
+                <div className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></div>
+              </p>
               <p className="pt-12">
                 Talent is what enable us to create great companies.
               </p>

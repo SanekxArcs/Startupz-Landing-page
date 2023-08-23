@@ -22,7 +22,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 Name*
               </label>
               <input
-                className="w-full px-5 py-3.5 font-medium border-0 shadow-lg text-lg rounded-xl text-whitesmoke"
+                className="w-full px-5 py-3.5 font-medium border-0 shadow-lg text-lg rounded-xl text-darkslategray"
                 type="name"
                 name="name"
                 id="name"
@@ -33,7 +33,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 Email*
               </label>
               <input
-                className="w-full px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-whitesmoke"
+                className="w-full px-5 py-3 text-lg font-medium border-0 shadow-lg rounded-xl text-darkslategray"
                 type="email"
                 name="email"
                 id="email"
@@ -44,7 +44,7 @@ const Contacts = ({ clickHandlerThanks }) => {
                 Message*
               </label>
               <textarea
-                className="w-full px-5 py-3 text-lg border-0 shadow-lg font-roboto rounded-xl text-whitesmoke"
+                className="w-full px-5 py-3 text-lg border-0 shadow-lg font-roboto rounded-xl text-darkslategray"
                 name="message"
                 id="message"
                 cols="50"

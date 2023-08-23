@@ -18,8 +18,9 @@ const WhoWeAre = () => {
 
             <div className="grid md:grid-cols-3 xl:px-[8rem] px-4 pt-20 font-bold text-2xl lg:text-3xl gap-12">
               <div className="flex flex-col gap-10">
-                <p className="underline text-coral underline-offset-[20px]">
+                <p className=" text-coral relative">
                   01
+                  <div className="w-[50px] absolute left-0  -bottom-[20px] h-[2px] bg-darkslategray/50"></div>
                 </p>
                 <p className=" text-darkslategray">
                   We develop innovative products, systems and services
@@ -27,15 +28,17 @@ const WhoWeAre = () => {
               </div>
 
               <div className="flex flex-col gap-10">
-                <p className="underline text-coral underline-offset-[26px]">
-                  02
+                <p className=" text-coral relative">
+                  02{" "}
+                  <div className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></div>
                 </p>
                 <p>Next we build teams to scale them into companies</p>
               </div>
 
               <div className="flex flex-col gap-10">
-                <p className="underline text-coral underline-offset-[26px]">
+                <p className=" text-coral relative">
                   03
+                  <div className="w-[50px] absolute left-0 -bottom-[20px] h-[2px] bg-darkslategray/50"></div>
                 </p>
                 <p>Each startup solving one problem at a time</p>
               </div>

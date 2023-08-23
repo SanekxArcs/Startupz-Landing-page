@@ -36,9 +36,10 @@ export default Assistant;
 
 const AssistantPopup = () => {
   return (
-    <div className="absolute p-4 font-medium rounded-full -top-16 md:-top-10 -left-52 bg-darkcyan text-whitesmoke">
+    <div className="absolute p-4 font-medium rounded-full -top-16 -left-52 bg-darkcyan text-whitesmoke rounded-br-none">
       <p>
-        Hi! I am Ben, your virtual assistant. <br /> How can I make your day better?
+        Hi! I am Ben, your virtual assistant. <br /> How can I make your day
+        better?
       </p>
     </div>
   );
