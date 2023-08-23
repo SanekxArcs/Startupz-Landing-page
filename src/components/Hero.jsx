@@ -108,7 +108,7 @@ const Hero = () => {
 
         {/* Background Art */}
 
-        <div className="absolute bottom-0 -right-64 -z-10">
+        <div className="absolute bottom-0 -right-64 md:right-0 -z-10">
           <img
             className=" opacity-50 md:opacity-100 w-2/3 md:w-144 lg:w-[40rem] xl:w-[50rem]"
             src={heroArt}
