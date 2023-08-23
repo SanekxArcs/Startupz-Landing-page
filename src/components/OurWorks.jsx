@@ -35,9 +35,13 @@ const workData = [
   },
 ];
 
-const OurWorks = () => {
+// eslint-disable-next-line react/prop-types
+const OurWorks = ({ clickHandlerAlert }) => {
   return (
-    <section className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden">
+    <section
+      className="container py-24 md:py-44 xl:px-[8rem] px-4 overflow-hidden"
+      id="Startups"
+    >
       <h4 className="text-4xl text-center md:text-5xl">Our works</h4>
       <div className="grid gap-6 pt-16 lg:grid-cols-2">
         {workData.map((work, index) => (
@@ -50,12 +54,12 @@ const OurWorks = () => {
               <i>{work.description}</i>
             </p>
             <img className="w-full md:w-96" src={work.image} alt="" />
-            <a
-              className="px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
-              href=""
+            <button
+              onClick={clickHandlerAlert}
+              className=" border-0 bg-white px-6 py-3 mt-6 font-bold no-underline rounded-full text-complementary-green ring-1 ring-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
             >
               More
-            </a>
+            </button>
           </div>
         ))}
       </div>
