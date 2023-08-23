@@ -1,11 +1,12 @@
  import leftman from "./../assets/leftman.png";
  import rightman from "./../assets/rightman.png";
-const Hiring = () => {
+// eslint-disable-next-line react/prop-types
+const Hiring = ({ clickHandlerAlert }) => {
   return (
     <>
       <section className="flex items-center justify-between py-16 overflow-hidden bg-snow">
         <img
-          className="hidden h-10  md:block md:h-44 lg:h-64 xl:h-80"
+          className="hidden h-10 md:block md:h-44 lg:h-64 xl:h-80"
           src={leftman}
           alt="left man"
         />
@@ -16,12 +17,13 @@ const Hiring = () => {
               We&apos;re always looking for talented people to join and help
               build our startups. Check out our current openings
             </p>
-            <a
-              className="px-6 py-4 mt-3 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
+            <button
+              onClick={clickHandlerAlert}
+              className="border-0 px-6 py-4 mt-3 md:mt-6 font-bold text-white no-underline rounded-full bg-complementary-green hover:-translate-y-0.5 transition-all hover:shadow-md"
               href="#"
             >
               See current openings
-            </a>
+            </button>
           </div>
         </div>
 
@@ -33,6 +35,6 @@ const Hiring = () => {
       </section>
     </>
   );
-}
+};
 
 export default Hiring
