@@ -21,7 +21,7 @@ const Assistant = () => {
       >
         <div className="flex items-center justify-center">
           <img
-            className="w-14 h-14 md:w-28 md:h-28"
+            className="rounded-full w-14 h-14 md:w-28 md:h-28"
             src={showPopup ? CloseIcon : AssistantImage}
             alt={showPopup ? "close" : "assistant"}
           />
