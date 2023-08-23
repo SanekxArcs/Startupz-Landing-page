@@ -4,8 +4,6 @@
 
 Welcome to the official repository of the Startupz Landing Page. This project is a modern and sleek landing page designed for startups and businesses looking to make a strong online presence.
 
-# Made to showcase my front-end development skills for a company, this is a test.
-
 ## Features
 
 - **Full Responsive Design**: The landing page is designed to be fully responsive, ensuring a seamless experience across all devices.
